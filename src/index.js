@@ -3,8 +3,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-// shuffles (randomizes an array)
-// e.g. myArray.shuffle()
 Array.prototype.shuffle = function () {
     var currentIndex = this.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
@@ -17,8 +15,6 @@ Array.prototype.shuffle = function () {
     return this;
 }
 
-// returns a deck of cards
-// e.g. getDeck()
 window.getDeck = function () {
     var ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king', 'ace'];
     var suits = ['clubs', 'diamonds', 'hearts', 'spades'];
